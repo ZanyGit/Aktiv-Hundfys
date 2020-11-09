@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="rehab.css">
+
+    <title></title>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"><img src="banner.jpg" style="margin-top: 5px;"></a>
+      <div style="width:1000px; height:30px; display: flex; flex-direction: row; justify-content:center; align-items:center;">
+        <div style="width:100%; height:3px; background-color:var(--company-blue); border-radius: 4px 0 0 4px">
+          <nav>
+            <ul>
+              <li><a href="rehab.html">Friskvård & Rehab</a></li>
+              <li><a href="kurser.html">Kurser</a></li>
+              <li>Webshop</li>
+
+            </ul>
+          </nav>
+        </div>
+        <img src="bilder/paws.png" style="height:30px; margin:0 10px;">
+        <div style="width:100%; height:3px; background-color:var(--company-blue); border-radius: 0px 4px 4px 0">
+          <nav>
+            <ul>
+              <li><a href="priser.html">Priser</a></li>
+              <li>Boka tid</li>
+              <li><a href="about.html">Om Aktiv Hundfys</a></li>
+
+            </ul>
+          </nav>
+        </div>
+      </div>
+<br><br><br>
+      <!-- <nav>
+        <ul>
+          <li><a href="friskvard.html">Friskvård & Rehab</a></li>
+          <li><a href="kurser.html">Kurser</a></li>
+          <li>Webshop</li>
+          <li>Priser</li>
+          <li>Boka tid</li>
+          <li><a href="about.html">Om Aktiv Hundfys</a></li>
+        </ul>
+      </nav> -->
+    </header>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content-area">
+        <div class="modal-image-container" id="modal-image-container"></div>
+        <div class="modal-text-area">
+          <h1 id="modal-title"></h1>
+          <p id="modal-text"></p>
+          <div class="modal-button-container">
+            <div class="sales-card-button ">
+              <p >Boka tid</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div style="width:100%; display: flex; align-items:center; padding: 20px 0 30px 0; flex-direction:column;">
+    <h1 style="width: 1000px; text-align:center; font-weight: 200;">Läs mer om våra behandlingsmetoder</h1>
+    <!-- <p style="font-size:16px; font-style:italic; text-align:center; width: 800px;">Vi har alltid ett utbud av kurser inom agility och friskvård. Är det något ni saknar är ni välkomna med en intresseanmälan, vi är alltid måna om att möta våra kunders behov. -->
+      <br></p>
+</div>
+    <div style="display: flex; justify-content: center; margin-bottom:50px;">
+    <div class="rehab-container">
+      <div class="rehab-option" name="test" id="genomgang" onmouseover="handleMouseover(this)" onmouseleave="handleMouseLeave(this)" style="background-image: url('bilder/genomgang.jpeg'); background-size:cover;">
+        <div class="rehab-option-filter"></div>
+        <h3>Genomgång</h3>
+        <p id="p-tag1" class="">Vi kontrollerar hundens rörelseapparat för att finna eventuella avvikelser som kan behöva behandling.</p>
+      </div>
+      <div class="rehab-option" id="laser" onmouseover="handleMouseover(this)" onmouseleave="handleMouseLeave(this)" style="background-image: url('bilder/laser.jpeg'); background-size:cover;">
+        <div class="rehab-option-filter"></div>
+        <h3>Laser</h3>
+        <p id="p-tag2" class="">Laserljuset har en läkande effekt på cellnivå och kan halvera läkningstiden av skador och sår.</p>
+      </div>
+      <div class="rehab-option" id="massage" onmouseover="handleMouseover(this)" onmouseleave="handleMouseLeave(this)" style="background-image: url('bilder/masse.jpg'); background-size:cover;">
+        <div class="rehab-option-filter"></div>
+        <h3>Massage</h3>
+        <p id="p-tag3" class="">GSM är en effektiv behandling vid sträckningar och muskelspänningar, samt för att påskynda återhämtningen.</p>
+      </div>
+      <div class="rehab-option" id="friskvard" onmouseover="handleMouseover(this)" onmouseleave="handleMouseLeave(this)" style="background-image: url('bilder/friskvard.jpeg'); background-size:cover;">
+        <div class="rehab-option-filter"></div>
+        <h3>Friskvård</h3>
+        <p id="p-tag4" class="hidden">Friskvård är nyckeln för att våra hundar ska ha fysiskt starka kroppar och hålla för det arbete vi ber dem om.</p>
+      </div>
+      <div class="rehab-option" id="rehab" onmouseover="handleMouseover(this)" onmouseleave="handleMouseLeave(this)" style="background-image: url('bilder/rehab.jpeg'); background-size:cover;">
+        <div class="rehab-option-filter"></div>
+        <h3>Rehab</h3>
+        <p id="p-tag5" class="hidden">Om hunden skadar/överanstränger sig är det viktigt att i ett så tidigt skede som möjligt sätta in rätt behandling.</p>
+      </div>
+      <div class="rehab-option" id="djupvag" onmouseover="handleMouseover(this)" onmouseleave="handleMouseLeave(this)" style="background-image: url('bilder/djupvag.jpg'); background-size:cover;">
+        <div class="rehab-option-filter"></div>
+        <h3>Djupvåg</h3>
+        <p id="p-tag6" class="hidden">Djupvågsbehandling mjukar vi upp fascian som omger musklerna och stimulerar vi självläkning</p>
+      </div>
+      <div class="rehab-option" id="elektroterapi" onmouseover="handleMouseover(this)" onmouseleave="handleMouseLeave(this)" style="background-image: url('bilder/elektro3.jpg'); background-size:cover;">
+        <div class="rehab-option-filter"></div>
+        <h3>Elektroterapi</h3>
+        <p id="p-tag7" class="hidden">Med hjälp av ström påverkar vi musklerna och nervvävnaden på ett väldigt effektivt sätt.</p>
+      </div>
+      <div class="rehab-option" onmouseover="handleMouseover(this)" onmouseleave="handleMouseLeave(this)" id="simning" style="background-image: url('bilder/simning.jpeg'); background-size:cover;">
+        <div class="rehab-option-filter"></div>
+        <h3>Simning</h3>
+        <p id="p-tag8" class="hidden">Simträning är en skonsam och effektiv träningsform som stärker muskler leder och konditionen.</p>
+      </div>
+      <div class="rehab-option" id="vibb" onmouseover="handleMouseover(this)" onmouseleave="handleMouseLeave(this)" style="background-image: url('bilder/vibb.jpg'); background-size:cover;">
+        <div class="rehab-option-filter"></div>
+        <h3>Vibbträning</h3>
+        <p id="p-tag9" class="hidden">Svängningarna belastar hundens leder på ett naturligt sätt och aktiverar musklerna i rehabiliterande- och friskvårdssyfte.</p>
+      </div>
+    </div>
+    </div>
+
+    <!-- <div style="width:1000px; height:30px; display: flex; flex-direction: row; justify-content:center; align-items:center;">
+      <div style="width:100%; height:3px; background-color:gray; border-radius: 4px 0 0 4px">
+      </div>
+      <img src="bilder/paws.png" style="height:30px; margin:0 10px;">
+      <div style="width:100%; height:3px; background-color:gray; border-radius: 0px 4px 4px 0">
+      </div>
+    </div> -->
+
+
+
+    <footer>
+      <div class="footer-filter"></div>
+      <div class="footer-container">
+      <div class="footer-left">
+      <div class="footer-info">
+        <div class="icon-container">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="info-container">
+          <h3>Adress</h3>
+          <p>Aktiv Hundfys</p>
+          <p>Runsavägen 10</p>
+          <p>194 91 Upplands Väsby</p>
+
+        </div>
+      </div>
+    <div class="footer-info">
+      <div class="icon-container">
+        <i class="fas fa-phone-alt"></i>
+      </div>
+      <div class="info-container">
+        <h3>Telefon</h3>
+        <p>073-567 86 35</p>
+      </div>
+    </div>
+    <div class="footer-info">
+      <div class="icon-container">
+        <i class="far fa-envelope"></i>
+      </div>
+      <div class="info-container">
+        <h3>Email</h3>
+        <p>info@aktivhundfys.se</p>
+      </div>
+    </div>
+    </div>
+    <div class="footer-center">
+      <!-- <div class="img-container">
+        <img src="footerimg.jpg" class="footer-img" style="border:7px solid rgba(255,255,255,0.3);">
+      </div> -->
+    </div>
+    <div class="footer-right">
+      <div class="socials">
+        <i class="fab fa-facebook"></i>
+        <p>Facebook</p>
+        <!-- <p>Facebook</p> -->
+      </div>
+      <div class="socials">
+        <i class="fab fa-instagram"></i>
+        <p>Instagram</p>
+        <!-- <p>Instagram</p> -->
+
+      </div>
+      <p style="margin: 130px 0 0 90px; font-size: 13px;">&copy; Aktiv Hundfys 2020</p>
+    </div>
+    </div>
+  </footer>
+  </body>
+  </html>
+
+
+    <script>
+    const services = {
+      genomgang: {
+        text:`Vi känner noga igenom hundens muskler, leder, ligament och kontrollerar rörelserna för att hitta eventuella avvikelser som kan behöva behandling. Efter genomgången går vi tillsammans igenom hundens status, eventuella fynd samt lämnar rekommendation om eventuell behandlingsplan. Det är alltid upp till dig som ägare om du vill gå vidare med föreslagen behandling. Vi besvarar självklart de frågor du har kopplat till genomgången och behandlingsplanen. I samråd med dig bokar vi en uppföljningstid för att säkerställa att behandlingarna gett önskat resultat. <br><br>
+        En genomgång tar ca. 45 min.`,
+        title:"Genomgång",
+        image: "bilder/genomgang.jpeg"
+      },
+      friskvard: {
+        text:`För att våra hundar ska hålla för det arbete vi ber dem om är det viktigt att de har fysiskt starka kroppar. Oavsett om du har en tävlingshund eller en sällskapshund är friskvård en viktigt nyckel till ett långt och hållbart hundliv. Med hjälp av friskvårdsträning bygger vi upp hundarnas muskulatur, kondition, koordination och balans. Vi har flera verktyg för att hjälpa era hundar att bli och förbli starka och smidiga. Vi hjälper dig gärna att lägga upp ett individanpassat träningsschema utefter era förutsättningar.`,
+        title: "Friskvård",
+        image:"bilder/friskvard.jpeg"
+      },
+      rehab: {
+        text:`Tyvärr händer det att våra hundar skadar sig eller överanstränger sig. Då är det viktigt att i ett så tidigt skede som möjligt sätta in rätt och effektiv behandling för att minimera skadans omfattning och undvika sekundära skador och överbelastningar. Vi har flera behandlingsmetoder att välja på för att säkerställa så kort och effektiv rehabilitering som möjligt. Vi rekommenderar att man kollar sin hund hos fysioterapeut minst en gång per år för att hitta eventuella skador i ett tidigt skede. Vet du, eller misstänker du att din hund lider av någon skada eller överansträngning är du välkommen att boka en genomgång hos oss.`,
+        title: "Rehab",
+        image: "bilder/rehab.jpeg"
+      },
+      massage: {
+        text: `Med GSM kommer vi åt både den ytliga och djupa muskulaturen för att öka hundens rörlighet och prestationsförmåga.
+
+Massagen ökar blodcirkulationen och ger ett effektivt dränage. Därmed är det en effektiv behandling vid sträckningar och muskelknutor, samt för att påskynda återhämtning. <br><br>
+
+
+Med hjälp av GMS kan vi: <br>
+
+– Minska smärta, svullnader och stelhet<br>
+
+– Förebygga rygg- och nackproblem, ledproblem och ärrbildning i musklerna<br><br>
+
+
+
+Endorfiner, som är kroppens eget ”morfin”, frisätts under massagen vilket ger både fysisk som mental påverkan. Oftast ger GSM snabbt resultat, men det kan krävas 3-5 behandlingar för att uppnå optimalt resultat, därefter bör man underhålla med massage varje till varannan månad. En mjuk, smidig och välmående muskulatur ger en positiv, arbetsvillig och hållbar kropp. <br><br>
+
+
+
+OBS! Det är 7 dagars karenstid för officiell tävling med hund efter massagebehandling.`,
+        title:"GSM - Genuin Svensk Hundmassage",
+        image:"bilder/masse.jpg"
+      },
+      elektroterapi:{
+        title: "Elektroterapi",
+        text: `Elektroterapi är ett maskinellt, högteknologiskt instrument med låg- och mellanfrekvent elström. Strömmarna vandrar mellan plus- och minuspol, via plattor som placeras på det område som man vill behandla. Med hjälp av de olika strömformerna påverkar vi musklerna och nervvävnaden för att öka blodgenomströmningen lokalt i vävnaden. Behandlingen har en smärtlindrande effekt då den påverkar både sensoriska och motoriska nerver vilket resulterar i att spända och överansträngda muskler slappnad av. Elektroterapi har en effektivare, djupare mer långvarig effekt på djupliggande muskulatur än exempelvis TENS, ultraljud, intraljud och massage. <br><br>
+
+
+
+Elektroterapi är effektivt vid: <br>
+
+- Svullnader och sårskador<br>
+
+- Led- och senskador<br>
+
+- Muskelskador<br><br>
+
+
+
+Behandling med elektroterapi är helt smärtfri. <br><br>
+
+
+OBS! Det är 7 dagars karenstid för officiell tävling med hund efter elektroterapi.`,
+        image:"bilder/elektro3.jpg"
+},
+      laser: {
+        title:"Laserterapi",
+        text:`Är en smärtfri behandling och har en läkande effekt på cellnivå. Kärlen i blodsystemet och lymfsystemet vidgas vilket kan underlätta för kroppens förmåga att ta hand om slaggprodukter samt att blodcirkulationen till det behandlade området ökar. Lasern används direkt på skadeområdet eller triggerpunkter. Med hjälp av laser kan man halvera läkningstiden och därmed konvalescenstiden. Det frisätts endorfiner och oxytocin i kroppen, vilket ger smärtlindring och en välbehagkänsla hos djuret som behandlas. Detta gör att djuret kan bli lugn, men även lite trött under behandlingen. <br><br>
+        Laser behandlar effektivt: <br>
+        - Muskelskador<br>
+        - Senskador<br>
+        - Ledinflammation och artros<br>
+        - Sårskador<br>
+        - Hudbesvär<br><br>
+        En positiv reaktion är förväntad inom tre behandlingar.`,
+        image:"bilder/laser.jpeg"
+},
+    djupvag:{
+      title:"Djupvågsbehandling",
+      text:`Djupvågsmaskinen ger 400-1200 harmoniska vibrationer per minut, vilket sätter fascian (bindväven) i rörelse. Fascian omsluter alla muskler och ska säkerställa att musklerna håller sig på plats under muskelkontraktion. Vid överansträngda muskler kan fascian mellan olika muskler blir torr och klistra samman, vilket minskar genomflödet av vätska och inskränker därmed hundens rörlighet. Med hjälp av djupvågsbehandling mjukar vi upp fascian, säkerställer ett gott genomflödet av vätska genom vävnaderna, vilket optimerar näringsutbytet i musklerna samt bortforslande av slaggprodukter. Med andra ord stimulerar vi självläkning<br><br>
+      Djupvågsbehandlingen ger: <br>
+      - Ökad Rörlighet<br>
+      - Mjukar och effektiva muskler<br>
+      - Ökar flödet av lymfan<br>
+      - Optimerar näringsutbytet i cellerna samt bortförsel av slaggprodukter<br>
+      - Bättre prestation och återhämtning`,
+      image:"bilder/djupvag.jpg"
+},
+      vibb:{
+        title:"Vibbrationsträning",
+        text:`Vibrationsplattan genererar vertikala svängningar med en frekvens mellan 5-30 Hertz (svängningar per sekund). Svängningarna belastar hundens leder på ett naturligt sätt och aktiverar musklernas sträck- och böjreflexer. Vibrationerna aktiverar musklerna i benen, höfterna och bålen. Med hjälp av frekvensen styr vi vilken typ av träning/behandling vi vill åstadkomma och därför är vibbträning effektivt både i rehabiliterande- och friskvårdssyfte. <br><br>
+        Vibrationsträning används med fördel vid: <br>
+        - Främja läkning<br>
+        - Styrketräning <br>
+        - Balansträning <br>
+        - Avslappning och återhämtning<br>
+        - Fettförbränning<br><br>
+För optimal effekt rekommenderas vibrationsträning 1–3 gånger per vecka.`,
+        image:"bilder/vibb.jpg"
+},
+        simning: {
+          title: "Simning",
+          text:`Simträning är en skonsam och effektiv träningsform som passar de flesta hundar. Med hjälp av simning bygger vi upp en bra kondition, fina muskler och starkare leder. <br><br>
+
+
+
+
+
+ För att få simträna själva krävs det att man tar ett simkörkort, 4 instruktörsledda simtillfällen (vissa hundar kräver fler än 4 gånger för att bli tillräckligt bekväma i poolen). Efter erhållet simkörkort lägger vi upp en individuell simplanering och kan efter ägarens önskemål boka upp en uppföljning för att stämma av att träningen går enligt plan och har önskad effekt. <br><br>
+
+
+
+Om ni redan har simkörtkort från något annat hundsim bokar vi ett tillfälle med instruktör för att gå igenom vårat hundsim, samt så får ni med er några tips på hur ni kan lägga upp träningen framöver. Bedömer vi att er hund inte simmar bra nog i poolen bokar vi upp ytterligare någon tid så att vi säkerställer att träningen blir bra. <br><br>
+
+
+
+OBS All simning som sker i rehabiliterande syfte måste utföras med instruktör för att säkerställa att vi belastar huden rätt.`,
+          image:"bilder/simning.jpeg"
+        }
+    }
+
+
+      const modal = document.getElementById('modal')
+      const modalText = document.getElementById('modal-text')
+      const modalTitle = document.getElementById('modal-title')
+      const modalImage = document.getElementById('modal-image-container')
+
+      const genomgang = document.getElementById('genomgang')
+      const laser = document.getElementById('laser')
+      const massage = document.getElementById('massage')
+      const friskvard = document.getElementById('friskvard')
+      const rehab = document.getElementById('rehab')
+      const djupvag = document.getElementById('djupvag')
+      const elektroterapi = document.getElementById('elektroterapi')
+      const simning = document.getElementById('simning')
+      const vibb = document.getElementById('vibb')
+
+      const toggleModal = (e) =>{
+
+        modalTitle.innerHTML = services[e.target.parentElement.id].title
+        modalText.innerHTML = services[e.target.parentElement.id].text
+        modalImage.style.backgroundImage = `url('${services[e.target.parentElement.id].image}')`
+        modal.classList.toggle('hidden')
+      }
+
+      const handleMouseover = (x) =>{
+        var parent1 = document.getElementById(x.id)
+        parent1.children[2].classList.remove('hidden')
+
+      }
+
+      const handleMouseLeave = (x) =>{
+        var parent1 = document.getElementById(x.id)
+        parent1.children[2].classList.add('hidden')
+
+      }
+
+      genomgang.addEventListener('click', (e)=>toggleModal(e))
+       laser.addEventListener('click', (e)=>toggleModal(e))
+       massage.addEventListener('click', (e)=>toggleModal(e))
+       friskvard.addEventListener('click', (e)=>toggleModal(e))
+       rehab.addEventListener('click', (e)=>toggleModal(e))
+       djupvag.addEventListener('click', (e)=>toggleModal(e))
+       elektroterapi.addEventListener('click', (e)=>toggleModal(e))
+       simning.addEventListener('click', (e)=>toggleModal(e))
+       vibb.addEventListener('click', (e)=>toggleModal(e))
+
+      // const rehab_container = document.getElementById('test')
+
+      // rehab_container.addEventListener('click', (e)=>modal.classList.toggle('hidden'))
+      modal.addEventListener('click', (e)=>modal.classList.toggle('hidden'))
+     </script>
+
+  </body>
+
+</html>

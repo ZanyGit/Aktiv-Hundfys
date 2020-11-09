@@ -1,0 +1,32 @@
+.sponsring-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sponsringskort{
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0;
+}
+.sponsring-bild{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50%;
+
+}
+.sponsringskort-text{
+  font-family: 'Lato';
+  padding: 0px 50px;
+  line-height: 1.5;
+  width: 700px;
+}
+.sponsringskort-text h2{
+  font-size: 22px;
+
+}
+.sponsringskort-text p{
+  font-size: 15px;
+}

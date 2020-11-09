@@ -1,0 +1,34 @@
+.kurser{
+  width: 800px;
+  margin: 50px auto;
+}
+.kurser h2{
+  font-family: 'Lato';
+  font-size: 22px;
+  margin: 5px 10px;
+}
+.kurser p{
+  font-family: 'Lato';
+  font-size: 15px;
+  margin: 0px 10px;
+  line-height: 1.5;
+
+}
+.pink{
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.entass{
+  background-image: url('bilder/entass.png');
+  background-repeat: no-no-repeat;
+  background-size: contain;
+  height: 100px;
+  width:100px;
+  position: absolute;
+  top:50px;
+  left: 70px;
+  transform: rotate(30deg);
+  opacity: 0.3;
+}
