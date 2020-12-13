@@ -1,0 +1,315 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.logo{
+  color: white;
+  background-image: url("banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -120px 0px;
+  width: 400px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+
+}
+.navmenu{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-weight:normal;
+  letter-spacing: 1.3px;
+}
+.navmenu-item{
+  text-transform: uppercase;
+  font-family: sans-serif;
+  margin-left: 50px;
+  padding: 7px 14px;;
+  font-weight: bold;
+  font-size: 16px;
+}
+.book{
+  border: 2px solid #ab0006;
+  color: #ab0006;
+  border-radius: 8px;
+}
+
+.top-part{
+  display: flex;
+  flex-direction: row;
+  width: 1300px;
+  margin: 30px auto;
+}
+.tp-image{
+  background-image: url("höst.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 900px;
+  position: relative;
+  box-shadow: 0px 1px 15px rgba(0,0,0,0.3);
+}
+.tp-image-offer{
+  height: 350px;
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  box-shadow: 0px 1px 8px rgba(0,0,0,0.3);
+  opacity: 0.9;
+
+}
+.offer-circle{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ab0006;
+
+}
+.offer-erbjudande{
+  color: #5e5e5e;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  font-size: 14px;
+}
+.offer-erbjudande p{
+  margin-left: 17px;
+}
+.offer-info{
+  padding:10px 40px;;
+  font-size: 16px;
+  font-family: serif;
+  line-height: 1.4;
+}
+.offer-btn{
+  background-color: #ab0006;
+  color: white;
+  display: inline;
+  padding: 7px 14px;;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.2px;;
+  font-family: sans-serif;
+}
+.btn-container{
+  display: flex;
+  justify-content:flex-end;
+  margin-top: 10px;
+}
+
+.tp-menu {
+  margin-left: 30px;
+}
+
+.tp-menu-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+}
+.line-left{
+  width:100%;
+  height: 1px;
+  background-color: gray;
+}
+.line-right{
+  height: 1px;
+  background-color: gray;
+
+  width:100%
+}
+.between-lines{
+  white-space: nowrap;
+  padding:0 15px;
+}
+.between-lines{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+
+.tp-menu-card{
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+  margin-top: 15px;
+  width: 400px;
+}
+.tp-menu-img{
+  width: 120px;
+  height: 120px;
+}
+.tp-menu-fler{
+  color: #ab0006;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+  font-family: sans-serif;
+  font-size: 12px;
+  margin-top: 35px;
+  text-align: right;
+
+}
+.menu-card-info{
+  padding: 20px;
+}
+.menu-card-info h2{
+  font-size: 22px;
+}
+.middle-part{
+
+  width: 950px;
+  margin: 30px auto;
+}
+.mp-title h2{
+  text-align: center;
+  margin-top: 60px;
+}
+.mp-card-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.sales-card{
+  width: 270px;
+  height: 340px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+  position:relative;
+  margin-top: 30px;
+}
+.sales-card-img{
+  width: 270px;
+  height:250px;
+
+}
+.sales-btn{
+  width: 90px;
+  height: 30px;
+  background-color: #74b5ed;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+  position: absolute;
+  bottom: 76px;
+  left: 160px;
+}
+.sales-info{
+  padding: 20px;
+  background-color: #fafafa;
+}
+.sales-info-title{
+  font-weight: bold;
+
+}
+.sales-info-price{
+ font-weight: bold;
+ margin-top: 5px;
+}
+
+
+footer{
+  height:170px;
+  width: 1300px;
+  margin: 0 auto;
+  background-color: #cad9e3;
+}
+
+.hela-utbudet {
+  color: #ab0006;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+  font-family: sans-serif;
+  width:950px;
+  text-align: right;
+  margin: 0 auto 40px auto;
+}
+
+.bottom-part{
+  width: 950px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 100px 0;
+  position: relative;
+}
+.bp-offer{
+  width: 950px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+}
+.bp-offer-img{
+  height:300px;
+  width: 500px;
+  border-radius: 15px;
+  position: relative;
+  z-index: 2;
+}
+.bp-offer-info{
+  padding: 35px 30px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.bp-offer-info h1{
+  margin: 0 0 15px 0;
+  font-size: 30px;
+}
+.bp-offer-btn{
+  color: #ab0006;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+  font-family: sans-serif;
+  text-align: right;
+  color: #ab0006;
+  margin-top: 20px;
+}
+
+.tass{
+  background-image: url("entass.png");
+  background-size: contain;
+  position: absolute;
+  top: 30px;
+  left: 460px;
+  width: 150px;
+  height: 150px;
+  transform: rotate(40deg);
+  z-index: 1;
+  opacity: 0.1;
+
+}
